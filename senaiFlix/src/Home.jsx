@@ -20,7 +20,7 @@ function Home() {
     setLoading(true);
 
     const fetchMovies = fetch(
-      `https://api.themoviedb.org/3/movie/popular?api_key=${APIKEY}&language=pt-BR`,
+      `https://api.themoviedb.org/3/movie/top_rated?api_key=${APIKEY}&language=pt-BR`,
     ).then((res) => res.json());
 
     const fetchSeries = fetch(
@@ -64,7 +64,7 @@ function Home() {
         </div>
         <div className="field-group">
           <label>GENERO</label>
-          <select value={genero} onChange={(e) => setGenero(e.target.value)}>
+          <select className="selectGen" value={genero} onChange={(e) => setGenero(e.target.value)}>
             <option value="">Todos os Gêneros</option>
             <option value="28">Ação</option>
             <option value="35">Comédia</option>
@@ -76,13 +76,13 @@ function Home() {
             setGenero('')
         }}>Limpar Filtros</button>
       </SearchBar>
-      <>
-      <h2>Filmes Populares</h2>
+      <>   
+      <h2>Filmes mais bem avaliados</h2>
       <MovieList>
         {filtrar(movies).map(movie =>
             <Movie key={movie.id}>
                 <img src= {`${img_path}${movie.poster_path}`} alt={movie.title}/>
-                <span>{Movie.title}</span>
+                <span>{movie.title}</span>
             </Movie>
         )}
       </MovieList>

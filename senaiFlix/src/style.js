@@ -95,16 +95,20 @@ export const SearchBar = styled.div`
       font-weight: 700;
     }
   }
+  .selectGen{
+    cursor: pointer;
+    
+  }
 
   input, select {
     background: #1e1e26;
-    border: 1px solid #444;
+    border: 1px solid #ef0000ff;
     color: #fff;
-    padding: 0.8rem 1.2rem;
+    padding: 1rem 1.2rem;
     border-radius: 8px;
     font-size: 1rem;
-    width: 280px;
-    cursor: pointer;
+    width: 250px;
+    
     &:focus {
       border-color: #e50914;
       outline: none;
@@ -121,9 +125,10 @@ export const SearchBar = styled.div`
     font-weight: 600;
     margin-top: 1.4rem;
     transition: all 0.3s;
+    
 
     &:hover {
-      background: #fff;
+      background: #cac4c4ff;
       color: #000;
     }
   }
