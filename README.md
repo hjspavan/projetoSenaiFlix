@@ -1,2 +1,2 @@
-# projetoSenaiFlix
-Projeto de javascript com react
+# Projeto-SenaiFlix-React
+Projeto para o curso Desenvolvedor Javascript - React
