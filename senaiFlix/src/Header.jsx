@@ -78,6 +78,10 @@ const HeaderContainer = styled.header`
       display: block;
     }
   }
+
+option{
+  cursor: pointer;
+}
 `
 
 function Header() {

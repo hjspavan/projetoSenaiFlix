@@ -104,7 +104,7 @@ export const SearchBar = styled.div`
     border-radius: 8px;
     font-size: 1rem;
     width: 280px;
-
+    cursor: pointer;
     &:focus {
       border-color: #e50914;
       outline: none;
