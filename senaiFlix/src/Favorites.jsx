@@ -35,7 +35,7 @@ function Favorites(){
       <>
         <Header />
         <Container>
-          <p>Você ainda não tem filmes favoritos.</p>
+          <p style={{textAlign: 'center', margintop: '15rem', color: '#aaa', fontSize: "4rem"}}>Você ainda não tem filmes favoritos adicionados.</p>
         </Container>
         <Footer />
       </>
